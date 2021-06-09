@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Table Editing</title>
+
+
+  
+  
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Enter First Name</label>
+            <input type="text" class="form-control" id="" placeholder="Enter First Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="text" class="form-control" id=""  placeholder="Enter Last Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="text" class="form-control" id=""  placeholder="Enter Contact Number">
+          </div>
+          
+          
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <div class="card text-center">
+        <div class="card-header">
+          Table
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Some Table with data</h5>
+
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button class="btn btn-success badge-pill" data-bs-toggle="modal" data-bs-target="#add">ADD</button>
+            </div>
+          </div>
+          <br>
+
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Contact No</th>
+                <th class="text-right" >Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>789</td>
+                <td class="text-right">
+                  <button class="btn btn-primary badge rounded-pill bg-primary" data-bs-toggle="modal" data-bs-target="#edit" style="width: 75px">Edit</button>
+                  <button class="btn btn-danger badge rounded-pill bg-danger" style="width: 75px">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>David</td>
+                <td>Otto</td>
+                <td>456</td>
+                <td class="text-right">
+                  <button class="btn btn-primary badge rounded-pill bg-primary" data-bs-toggle="modal" data-bs-target="#edit" style="width: 75px">Edit</button>
+                  <button class="btn btn-danger badge rounded-pill bg-danger" style="width: 75px">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>John</td>
+                <td>Att</td>
+                <td>123</td>
+                <td class="text-right">
+                  <button class="btn btn-primary badge rounded-pill bg-primary" data-bs-toggle="modal" data-bs-target="#edit" style="width: 75px">Edit</button>
+                  <button class="btn btn-danger badge rounded-pill bg-danger" style="width: 75px">Delete</button>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer text-muted">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
